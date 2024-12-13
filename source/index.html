@@ -94,6 +94,18 @@
               Незабываемое приключение, во&nbsp;время которого вы отправитесь в&nbsp;путешествие по одному из самых нетронутых уголков дикой природы&nbsp;в&nbsp;мире.
             </p>
             <button class="hero_button button">Смотреть тур</button>
+            <div class="hero__picture-wrapper">
+              <picture>
+                <source media="(min-width: 1440px)" width="410" height="495" type="image/webp"
+                  srcset="img/photo-cards-desktop@1x.webp 1x, img/photo-cards-desktop@2x.webp 2x">
+                <source media="(min-width: 1440px)" width="410" height="495" type="image/png"
+                  srcset="img/photo-cards-desktop@1x.png 1x, img/photo-cards-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" width="442" height="365" type="image/webp"
+                  srcset="img/photo-cards-tablet@1x.webp 1x, img/photo-cards-tablet@2x.webp 2x">
+                <img class="hero__picture" src="img/photo-cards-tablet@1x.png" width="442" height="365"
+                  srcset="img/photo-cards-tablet@2x.png 2x" alt="Фотографии тура по камчатке" loading="lazy">
+              </picture>
+            </div>
             <div class="hero_detalis-wrapper">
               <div class="hero_detalis hero_detalis--duration">9 дней/10 ночей</div>
               <div class="hero_detalis hero_detalis--level">Средняя сложность</div>
