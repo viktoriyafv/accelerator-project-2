@@ -6,7 +6,7 @@ import './modules/adv-slider';
 
 window.addEventListener('DOMContentLoaded', () => {
   getAdvantagesSlider();
-
+  
   window.addEventListener('load', () => {
     menuToggle();
   });
