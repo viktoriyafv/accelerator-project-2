@@ -131,6 +131,14 @@
       text-align: left;
     }
   }
+
+  br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
 }
 
 .hero__button {
