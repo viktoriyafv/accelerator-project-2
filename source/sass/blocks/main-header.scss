@@ -94,6 +94,7 @@
     font-weight: 400;
     letter-spacing: 0;
     text-transform: none;
+    padding-top: 2px;
   }
 
   &:hover {
@@ -235,13 +236,14 @@
     font-size: 16px;
     line-height: 17px;
     letter-spacing: 0;
+    padding-top: 2px;
   }
 
   @media (min-width: $desktop-width) {
     width: auto;
     font-size: 18px;
     line-height: 18px;
-    padding-top: 1px;
+    padding-top: 3px;
   }
 
   &:hover {
