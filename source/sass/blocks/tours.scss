@@ -1,15 +1,18 @@
 .tours__wrapper {
   width: 320px;
+  min-height: 595px;
   padding: 20px 15px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 768px;
+    min-height: 637px;
     padding: 40px 45px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
+    min-height: 813px;
     padding: 100px 120px;
   }
 }
@@ -84,8 +87,8 @@
       $background-card,
       image-set(url("../../img/tours-1@1x.webp") type("image/webp") 1x,
       url("../../img/tours-1@2x.webp") type("image/webp") 2x,
-      url("../../img/tours-1@1x.jpg") type("image/jpg") 1x,
-      url("../../img/tours-1@2x.jpg") type("image/jpg") 2x);
+      url("../../img/tours-1@1x.jpg") type("image/jpeg") 1x,
+      url("../../img/tours-1@2x.jpg") type("image/jpeg") 2x);
   }
 
   &--altai {
@@ -93,8 +96,8 @@
       $background-card,
       image-set(url("../../img/tours-2@1x.webp") type("image/webp") 1x,
       url("../../img/tours-2@2x.webp") type("image/webp") 2x,
-      url("../../img/tours-2@1x.jpg") type("image/jpg") 1x,
-      url("../../img/tours-2@2x.jpg") type("image/jpg") 2x);
+      url("../../img/tours-2@1x.jpg") type("image/jpeg") 1x,
+      url("../../img/tours-2@2x.jpg") type("image/jpeg") 2x);
   }
 
   &--adygea {
@@ -102,8 +105,8 @@
       $background-card,
       image-set(url("../../img/tours-3@1x.webp") type("image/webp") 1x,
       url("../../img/tours-3@2x.webp") type("image/webp") 2x,
-      url("../../img/tours-3@1x.jpg") type("image/jpg") 1x,
-      url("../../img/tours-3@2x.jpg") type("image/jpg") 2x);
+      url("../../img/tours-3@1x.jpg") type("image/jpeg") 1x,
+      url("../../img/tours-3@2x.jpg") type("image/jpeg") 2x);
   }
 
   &--ural {
@@ -111,8 +114,8 @@
       $background-card,
       image-set(url("../../img/tours-4@1x.webp") type("image/webp") 1x,
       url("../../img/tours-4@2x.webp") type("image/webp") 2x,
-      url("../../img/tours-4@1x.jpg") type("image/jpg") 1x,
-      url("../../img/tours-4@2x.jpg") type("image/jpg") 2x);
+      url("../../img/tours-4@1x.jpg") type("image/jpeg") 1x,
+      url("../../img/tours-4@2x.jpg") type("image/jpeg") 2x);
   }
 }
 
@@ -125,10 +128,10 @@
 
 .tours__place {
   display: block;
-  padding: 8px 12px 8px 34px;
+  padding: 8px 13px 8px 34px;
   background-color: $color-button;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 12px;
   position: relative;
 
@@ -167,7 +170,7 @@
     display: block;
     width: 20px;
     height: 20px;
-    left: 0;
+    left: -1px;
     top: 50%;
     transform: translateY(-50%);
     position: absolute;
@@ -253,7 +256,7 @@
     width: 219px;
     font-size: 16px;
     line-height: 16px;
-    padding: 10px 20px 10px 0;
+    padding: 11px 20px 9px 1px;
   }
 
   &:hover {

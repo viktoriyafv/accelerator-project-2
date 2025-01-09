@@ -1,6 +1,8 @@
 const heroSlides = document.querySelectorAll('.hero__item');
 const gallerySlides = document.querySelectorAll('.gallery__item');
 const heroButtons = document.querySelectorAll('.hero__button');
+const heroPagination = document.querySelector('.hero__pagination');
+const heroPaginationButtons = heroPagination.getElementsByTagName('button');
 
 const getTabindexSlider = () => {
 
@@ -20,6 +22,9 @@ const getTabindexSlider = () => {
       heroButtons[l].setAttribute('tabindex', '-1');
       heroButtons[0].setAttribute('tabindex', '0');
     }
+    for (let m = 0; m < heroPaginationButtons.length; m++) {
+      heroPaginationButtons[m].setAttribute('tabindex', '0');
+    }
   } else if (!isValid()) {
     for (let i = 0; i < gallerySlides.length; i++) {
       gallerySlides[i].setAttribute('tabindex', '0');
@@ -29,6 +34,9 @@ const getTabindexSlider = () => {
     }
     for (let l = 0; l < heroButtons.length; l++) {
       heroButtons[l].setAttribute('tabindex', '0');
+    }
+    for (let m = 0; m < heroPaginationButtons.length; m++) {
+      heroPaginationButtons[m].setAttribute('tabindex', '-1');
     }
   }
 };
