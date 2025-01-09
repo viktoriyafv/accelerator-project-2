@@ -1,14 +1,17 @@
 .gallery__wrapper {
   width: 320px;
+  min-height: 457px;
   padding-bottom: 3px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 768px;
+    min-height: 623px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
+    min-height: 741px;
   }
 }
 
@@ -81,16 +84,22 @@
   font-size: 23px;
   letter-spacing: -0.7px;
   margin-bottom: 10px;
+  padding-top: 16px;
+  padding-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     font-size: 25px;
     margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     letter-spacing: 0;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 35px;
     margin-bottom: 26px;
+    padding-top: 19px;
+    padding-bottom: 1px;
   }
 }
 

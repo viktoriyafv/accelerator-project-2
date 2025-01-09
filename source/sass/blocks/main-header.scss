@@ -5,6 +5,7 @@
 
 .main-header__wrapper {
   width: 320px;
+  min-height: 100px;
   margin: 0 auto;
   padding: 15px 15px 11px;
   display: grid;
@@ -15,12 +16,14 @@
     @include flex-between;
 
     width: 768px;
+    min-height: 82px;
     padding: 20px 45px;
     gap: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
+    min-height: 126px;
     padding: 32px 120px;
   }
 }

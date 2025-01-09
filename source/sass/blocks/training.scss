@@ -1,15 +1,18 @@
 .training__wrapper {
   width: 320px;
+  min-height: 946px;
   padding: 20px 15px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 768px;
+    min-height: 1050px;
     padding: 40px 45px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
+    min-height: 889px;
     padding: 40px 120px;
   }
 

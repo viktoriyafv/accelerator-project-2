@@ -1,14 +1,8 @@
-.about {
-  padding-top: 20px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 0;
-  }
-}
-
 .about__wrapper {
   width: 320px;
+  min-height: 947px;
   margin: 0 auto;
+  padding-top: 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;

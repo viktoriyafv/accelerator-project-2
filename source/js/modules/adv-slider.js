@@ -8,16 +8,21 @@ const createSlider = () => {
       modules: [Navigation],
       direction: 'horizontal',
       loop: true,
-      slidesPerView: 'auto',
+      simulateTouch: false,
+      slideClass: 'adv__item',
       navigation: {
         nextEl: '.adv__button-swiper--next',
         prevEl: '.adv__button-swiper--prev',
       },
       breakpoints: {
         1440: {
+          slidesPerView: 7,
+          initialSlide: 2,
           spaceBetween: 30,
           slidesPerGroup: 2,
-          slidesOffsetBefore: 30,
+          width: 2840,
+          slidesOffsetBefore: -190,
+          slidesOffsetAfter: 0,
         },
       }
     });

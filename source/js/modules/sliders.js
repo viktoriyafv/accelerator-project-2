@@ -15,16 +15,22 @@ const swiperReview = new Swiper('.reviews__swiper', {
   breakpoints: {
     320: {
       slidesPerView: 'auto',
+      slidesOffsetBefore: 0,
+      slidesOffsetAfter: 30,
     },
 
     768: {
       slidesPerView: 'auto',
       spaceBetween: 30,
+      slidesOffsetBefore: 45,
+      slidesOffsetAfter: 45,
     },
 
     1440: {
       slidesPerView: 'auto',
       spaceBetween: 120,
+      slidesOffsetBefore: 130,
+      slidesOffsetAfter: 130,
     }
   },
 });
