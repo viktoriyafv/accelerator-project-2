@@ -59,12 +59,12 @@
   @include reset-list;
 }
 
-.tours__item {
+.tours__list .tours__item {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   width: 290px;
-  min-height: 416px;
+  height: 416px;
   padding: 30px 20px;
   color: $color-white;
   background-color: #44628e;
