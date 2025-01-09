@@ -79,8 +79,10 @@
 
   @media (min-width: $tablet-width) {
     width: 324px;
+    height: 340px;
     padding: 29px 19px;
     margin-bottom: 0;
+    overflow-y: scroll;
   }
 
   @media (min-width: $desktop-width) {
