@@ -41,13 +41,15 @@
   }
 }
 
-.adv__list {
+.adv .adv__list {
   @include reset-list;
 
   @media (max-width: $mobile-width-only) {
     all: unset;
 
     @include flex;
+
+    align-items: stretch;
   }
 
   @media (min-width: $tablet-width) {
@@ -55,6 +57,7 @@
 
     @include flex;
 
+    align-items: stretch;
     gap: 30px;
     justify-content: center;
   }
@@ -71,6 +74,7 @@
 
 .adv .adv__item {
   width: 290px;
+  min-height: 239px;
   border: 1px solid rgba(2, 102, 193, 0.1);
   padding: 19px 9px;
   position: relative;
@@ -79,7 +83,7 @@
 
   @media (min-width: $tablet-width) {
     width: 324px;
-    height: 340px;
+    min-height: 340px;
     padding: 29px 19px;
     margin-bottom: 0;
     overflow-y: scroll;
@@ -89,7 +93,7 @@
     all: unset;
     box-sizing: border-box;
     width: 380px;
-    height: 329px;
+    min-height: 329px;
     border: 1px solid rgba(2, 102, 193, 0.1);
     padding: 39px 19px;
     position: relative;

@@ -78,10 +78,11 @@
 }
 
 .main-footer__item {
-  width: 120px;
+  margin: 0 auto;
+  width: auto;
 
   @media (min-width: $tablet-width) {
-    width: auto;
+    margin: 0;
   }
 
   &:nth-child(2) {
